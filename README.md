@@ -184,15 +184,27 @@ These limitations are intentional and aligned with exploratory research goals.
 - Reduces reliance on manual feature engineering
 - Provides a clear and extensible research baseline
 
-## 14. Author
+## Research Team
 
+### Principal Investigator
+**Prof. Siddhartha Duttagupta**  
+Department of Electrical Engineering  
+Indian Institute of Technology Bombay  
+
+### Co-Investigators
+**Prof. Subhash Kasture**  
+Managing Lead, FAAIR Organization  
+
+**Aabid Hassan**  
+
+### Research Staff / Students Involved
 **Vrushika K Panchal**  
-B.Tech in Data Science,
-Research and Development, FAAIR Organization
+B.Tech. in Data Science  
+Research and Development, FAAIR Organization  
 
 **Yash K Dhasal**  
-B.Tech in Computer Science and Technology (AI-DS),
-Research and Development, FAAIR Organization
+B.Tech. in Computer Science and Engineering  
+Research and Development, FAAIR Organization  
 
 ## 15. Acknowledgement
 
