@@ -5,7 +5,6 @@
 
 This repository presents a **research-oriented prototype** aligned with the *IITB–Optiver AI Innovation Lab* research theme **“Foundation Models for Tabular and Time-Series Data.”**  
 The work demonstrates how **Transformer architectures**, originally developed for natural language processing, can be adapted to learn **generalizable and reusable representations** from **structured and temporal datasets**, such as transaction logs.
-
 The repository is designed to be **clear, explainable, and extensible**, serving as a reference implementation for researchers exploring foundation-model concepts beyond text.
 
 ## 2. Purpose of This Repository
@@ -15,7 +14,6 @@ The primary objectives of this repository are:
 - To show how **self-attention mechanisms** capture temporal and feature interactions
 - To illustrate the concept of **pretrained embeddings for structured data**
 - To provide a **research baseline** for further large-scale or multimodal extensions
-
 This work focuses on **architecture and representation learning**, not production deployment.
 
 ## 3. Research Scope and Expectations
@@ -25,7 +23,6 @@ This repository should be interpreted with the following scope:
 - Emphasis is on **representation learning**, not end-task optimization
 - Implementations are **lightweight and illustrative**
 - Large-scale pretraining and multimodal fusion are discussed conceptually
-
 The goal is to establish **feasibility and clarity**, not to deliver a complete foundation model.
 
 ## 4. Research Themes Addressed
@@ -39,7 +36,10 @@ Conceptual extensions are outlined for:
 - **2.4 Multimodal Fusion**
 - **2.5 SAM-like Segmentation for Tabular Data**
 
-## 5. Repository Structure
+## 5. Repository Structure## Repository Structure
+
+```text
+transformers-for-tabular-timeseries/
 ├── research_area_02.ipynb
 │   └── Demonstration notebook implementing Transformer-based
 │       modeling for tabular and time-series data
@@ -50,7 +50,7 @@ Conceptual extensions are outlined for:
 │
 └── README.md
     └── Project overview and technical explanation
-
+```
 ## 6. How to Use This Repository
 
 Recommended reading order:
@@ -76,30 +76,23 @@ Tabular and transaction data are treated as **ordered sequences of feature vecto
 - Temporal dependencies
 - Feature interactions
 - Context-aware representations
-
 This approach reduces dependence on manual feature engineering and task-specific models.
 
 ## 9. System Flow and Architecture
 
 ### 9.1 High-Level System Flow
 
-Raw Tabular / Transaction Data
-        |
-        v
-Data Preprocessing and Encoding
-        |
-        v
-Sequential Representation
-        |
-        v
-Transformer Encoder
-(Self-Attention + Feed-Forward Layers)
-        |
-        v
-Learned Embedding Space
-        |
-        v
-Task-Specific Analysis or Prediction
+```mermaid
+flowchart LR
+    A[Raw Tabular / Transaction Data]
+    B[Data Preprocessing<br/>and Encoding]
+    C[Sequential Representation]
+    D[Transformer Encoder<br/>Self-Attention + Feed-Forward Layers]
+    E[Learned Embedding Space]
+    F[Task-Specific Analysis<br/>or Prediction]
+
+    A --> B --> C --> D --> E --> F
+```
 
 ### 9.2 Architectural Rationale
 
@@ -117,14 +110,12 @@ The notebook is organized in a progressive and explainable manner.
 - Tabular data is loaded and cleaned
 - Numerical features are scaled for stable training
 - Data is ordered temporally to preserve sequence structure
-
 This step ensures compatibility with Transformer architectures.
 
 ### 10.2 Tabular-to-Sequence Conversion
 
 Each row is treated as a time step, and each column as a feature dimension.  
 This enables:
-
 - Modeling temporal patterns
 - Learning inter-feature dependencies
 - Meaningful application of attention mechanisms
@@ -154,7 +145,6 @@ The Transformer encoder outputs dense embedding vectors that capture:
 - Temporal context
 - Behavioral patterns
 - Feature interactions
-
 These embeddings function similarly to **BERT embeddings**, but for **tabular and time-series data**.
 
 ### 10.5 Cross-Domain Generalization (Theme 2.3)
@@ -186,7 +176,6 @@ Embedding-space clustering enables:
 - Prototype-scale implementation
 - Limited dataset size
 - No large-scale self-supervised pretraining
-
 These limitations are intentional and aligned with exploratory research goals.
 
 ## 13. Key Contributions
@@ -207,7 +196,6 @@ Research and Development, FAAIR Organization
 
 ## 15. Acknowledgement
 
-This work aligns with the research directions proposed by the  
-**IITB–Optiver AI Innovation Lab**,  
+This work aligns with the research directions proposed by the **IITB–Optiver AI Innovation Lab**, 
 under the guidance of **Prof. Siddhartha Duttagupta**,  
 Department of Electrical Engineering, IIT Bombay.
