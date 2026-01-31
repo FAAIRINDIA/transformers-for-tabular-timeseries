@@ -187,11 +187,11 @@ These limitations are intentional and aligned with exploratory research goals.
 ## 14. Author
 
 **Vrushika K Panchal**  
-B.Tech in Data Science  
+B.Tech in Data Science,
 Research and Development, FAAIR Organization
 
 **Yash K Dhasal**  
-B.Tech in Computer Science and Technology (AI-DS) 
+B.Tech in Computer Science and Technology (AI-DS),
 Research and Development, FAAIR Organization
 
 ## 15. Acknowledgement
